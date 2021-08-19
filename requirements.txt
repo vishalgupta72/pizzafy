@@ -1,0 +1,3 @@
+django
+djangorestframework
+djongo==1.3.6
