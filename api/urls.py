@@ -1,7 +1,8 @@
 from django.urls import path, include
-from . import views
+# from . import views
+from .serializers import router
 
 urlpatterns = [
-    path('', views.index, name="homepage"),
+    path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls'))
 ]
